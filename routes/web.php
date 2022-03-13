@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\deferment;
+use App\Http\Controllers\main;
+use App\Http\Controllers\students;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [main::class, 'index']);
+
+// students
+Route::get('/students/deferment/application', [students::class, 'deferment']);
+Route::post('/students/deferment/apply', [deferment::class, 'applyDeferment'])->name('d.apply');
+
+
