@@ -16,6 +16,7 @@ class CreateDefermentsTable extends Migration
         Schema::create('deferments', function (Blueprint $table) {
             $table->increments('id');
             $table->string('adm');
+            $table->string('yos');
             $table->timestamps();
         });
     }
