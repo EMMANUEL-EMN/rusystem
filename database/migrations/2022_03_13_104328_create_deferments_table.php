@@ -14,7 +14,8 @@ class CreateDefermentsTable extends Migration
     public function up()
     {
         Schema::create('deferments', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('adm');
             $table->timestamps();
         });
     }
