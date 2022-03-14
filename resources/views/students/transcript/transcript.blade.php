@@ -1,3 +1,13 @@
+<div class="instruction">
+    <h4>Instructions</h4>
+    <ol>
+        <li>Fill part A and B of this form and present to the Dean of your school.</li>
+        <li>
+            Where a PROXY is collecting the transcript, a letter of authorization from
+             the claimant and original ID will be required
+        </li>
+    </ol>
+</div>
 <div class="trf">
     <center>
         <form action="{{ route('t.pply') }}" method="POST" enctype="multipart/form-data">

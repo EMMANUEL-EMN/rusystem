@@ -14,10 +14,14 @@ class Transcripts extends Migration
     public function up()
     {
         //
-        Schema::create('students', function (Blueprint $table) {
+        Schema::create('transcripts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('request');
             $table->string('year');
+            $table->string('financeOfficer')->default('pending');
+            $table->string('dean');
+            $table->string('examOfficer');
+            $table->string('registrar');
             $table->timestamps();
         });
     }

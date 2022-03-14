@@ -23,6 +23,6 @@ Route::get('/', [main::class, 'index']);
 Route::get('/students/deferment/application', [students::class, 'deferment']);
 Route::post('/students/deferment/apply', [deferment::class, 'applyDeferment'])->name('d.apply');
 
-Route::post('/students/transcript/application', [transcript::class, 'applyTranscript'])->name('t.apply');
+Route::post('/students/transcript/apply', [transcript::class, 'applyTranscript'])->name('t.apply');
 
 
