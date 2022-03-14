@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class transcript extends Model
 {
     use HasFactory;
+    protected $table = 'transcripts';
 }

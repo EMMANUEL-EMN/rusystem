@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTranscriptsTable extends Migration
+class Transcripts extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class CreateTranscriptsTable extends Migration
      */
     public function up()
     {
-        Schema::create('transcripts', function (Blueprint $table) {
-            $table->id();
+        //
+        Schema::create('students', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('request');
+            $table->string('year');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateTranscriptsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('transcripts');
+        //
     }
 }
