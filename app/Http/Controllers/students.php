@@ -11,4 +11,8 @@ class students extends Controller
     {
         return view('students.deferment.index');
     }
+    public function transcript()
+    {
+        return view('students.transcript.transcript');
+    }
 }

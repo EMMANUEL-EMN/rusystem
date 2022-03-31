@@ -1,9 +1,11 @@
 <?php
 
-use App\Http\Controllers\deferment;
 use App\Http\Controllers\main;
 use App\Http\Controllers\students;
+use App\Http\Controllers\deferment;
 use App\Http\Controllers\transcript;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\transcripts;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,6 +25,9 @@ Route::get('/', [main::class, 'index']);
 Route::get('/students/deferment/application', [students::class, 'deferment']);
 Route::post('/students/deferment/apply', [deferment::class, 'applyDeferment'])->name('d.apply');
 
-Route::post('/students/transcript/apply', [transcript::class, 'applyTranscript'])->name('t.apply');
+Route::get('/students/transcript/application', [students::class, 'transcript']);
+Route::post('/students/transcript/apply', [transcripts::class, 'applyTranscript'])->name('t.apply');
 
+Auth::routes();
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

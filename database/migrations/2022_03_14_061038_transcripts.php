@@ -19,9 +19,9 @@ class Transcripts extends Migration
             $table->string('request');
             $table->string('year');
             $table->string('financeOfficer')->default('pending');
-            $table->string('dean');
-            $table->string('examOfficer');
-            $table->string('registrar');
+            $table->string('dean')->default('pending');
+            $table->string('examOfficer')->default('pending');
+            $table->string('registrar')->default('pending');
             $table->timestamps();
         });
     }
