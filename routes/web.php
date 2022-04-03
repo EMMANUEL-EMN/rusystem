@@ -6,6 +6,7 @@ use App\Http\Controllers\deferment;
 use App\Http\Controllers\transcript;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\transcripts;
+use App\Http\Controllers\userAuth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,6 +29,5 @@ Route::post('/students/deferment/apply', [deferment::class, 'applyDeferment'])->
 Route::get('/students/transcript/application', [students::class, 'transcript']);
 Route::post('/students/transcript/apply', [transcripts::class, 'applyTranscript'])->name('t.apply');
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/login', [userAuth::class, 'login'])->name('login');

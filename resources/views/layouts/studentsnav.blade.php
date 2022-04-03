@@ -39,11 +39,11 @@
                         </li>
                         <li>
                             <i class="fa fa-file-alt"></i>
-                            <a href="/students/deferment/application">DEFERMENT</a>
+                            <a href="/students/deferment/application">Deferment</a>
                         </li>
                         <li>
                             <i class="fa fa-file-pdf"></i>
-                            <a href="/students/transcript/application">TRANSCRIPT</a>
+                            <a href="/students/transcript/application">Transcript</a>
                         </li>
                         <li>
 
@@ -54,11 +54,15 @@
                         </li>
                         <li>
                             <i class="fa fa-file-alt"></i>
-                            <a href="">DEFERMENT</a>
+                            <a href="">Deferment</a>
                         </li>
                         <li>
                             <i class="fa fa-file-pdf"></i>
-                            <a href="">TRANSCRIPT</a>
+                            <a href="">Transcript</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-sign-out"></i>
+                            <a href="/logout">Logout</a>
                         </li>
                     </ul>
                 </nav>
